@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:all": "npx prettier --check --config .prettierrc \"app\" \"config\"",
+    "write:all": "npx prettier --write --config .prettierrc \"app\" \"config\"",
+    "check:app": "npx prettier --check --config .prettierrc \"app\"",
+    "write:app": "npx prettier --write --config .prettierrc \"app\"",
+    "check:config": "npx prettier --check --config .prettierrc \"config\"",
+    "write:config": "npx prettier --write --config .prettierrc \"config\""
   },
   "dependencies": {
     "@types/node": "18.15.9",
@@ -18,5 +24,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "2.8.7"
   }
 }
