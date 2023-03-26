@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Use this repository as a [GitHub template](https://github.com/dhelarius/next-template/generate) or use [degit](https://github.com/Rich-Harris/degit) to clone to your machine with an empty git history:
+
+```
+npx degit dhelarius/next-template my-app
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
