@@ -1,0 +1,35 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "check:all": "prettier --check --config .prettierrc \"app\" \"config\"",
+    "write:all": "prettier --write --config .prettierrc \"app\" \"config\"",
+    "check:app": "prettier --check --config .prettierrc \"app\"",
+    "write:app": "prettier --write --config .prettierrc \"app\"",
+    "check:config": "prettier --check --config .prettierrc \"config\"",
+    "write:config": "prettier --write --config .prettierrc \"config\""
+  },
+  "dependencies": {
+    "@types/node": "18.15.9",
+    "@types/react": "18.0.29",
+    "@types/react-dom": "18.0.11",
+    "eslint": "9.21.0",
+    "eslint-config-next": "13.2.4",
+    "next": "15.2.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "typescript": "5.0.2",
+    "@dhelarius/core": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "2.8.7"
+  }
+}

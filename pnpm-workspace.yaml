@@ -1,0 +1,4 @@
+# next-clean/pnpm-workspace.yaml
+packages:
+  - "core"
+  - "next-app"

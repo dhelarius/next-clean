@@ -1,10 +1,12 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from './page.module.css';
+import { sayHello } from '@dhelarius/core';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  sayHello();
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -87,5 +89,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }

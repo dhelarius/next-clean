@@ -1,32 +1,14 @@
 {
-  "name": "next-template",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "check:all": "npx prettier --check --config .prettierrc \"app\" \"config\"",
-    "write:all": "npx prettier --write --config .prettierrc \"app\" \"config\"",
-    "check:app": "npx prettier --check --config .prettierrc \"app\"",
-    "write:app": "npx prettier --write --config .prettierrc \"app\"",
-    "check:config": "npx prettier --check --config .prettierrc \"config\"",
-    "write:config": "npx prettier --write --config .prettierrc \"config\""
-  },
-  "dependencies": {
-    "@types/node": "18.15.9",
-    "@types/react": "18.0.29",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.2"
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "2.8.7"
-  }
+    "name": "next-clean-workspace",
+    "private": true,
+    "scripts": {
+        "app:dev": "pnpm --filter next-app dev",
+        "app:build": "pnpm --filter next-app build",
+        "app:start": "pnpm --filter next-app start",
+        "app:lint": "pnpm --filter next-app lint",
+        "app:prettier": "pnpm --filter next-app prettier",
+        "app:prettier:check": "pnpm --filter next-app prettier:check",
+        "core:build": "pnpm --filter core build",
+        "core:lint": "pnpm --filter core lint"
+    }
 }
