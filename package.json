@@ -2,12 +2,12 @@
     "name": "next-clean-workspace",
     "private": true,
     "scripts": {
-        "app:dev": "pnpm --filter next-app dev",
-        "app:build": "pnpm --filter next-app build",
-        "app:start": "pnpm --filter next-app start",
-        "app:lint": "pnpm --filter next-app lint",
-        "app:prettier": "pnpm --filter next-app prettier",
-        "app:prettier:check": "pnpm --filter next-app prettier:check",
+        "dev": "pnpm --filter next-app dev",
+        "build": "pnpm --filter next-app build",
+        "start": "pnpm --filter next-app start",
+        "lint": "pnpm --filter next-app lint",
+        "prettier": "pnpm --filter next-app prettier",
+        "prettier:check": "pnpm --filter next-app prettier:check",
         "core:build": "pnpm --filter core build",
         "core:lint": "pnpm --filter core lint"
     }
