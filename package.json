@@ -6,8 +6,8 @@
         "build": "pnpm --filter next-app build",
         "start": "pnpm --filter next-app start",
         "lint": "pnpm --filter next-app lint",
-        "prettier": "pnpm --filter next-app prettier",
-        "prettier:check": "pnpm --filter next-app prettier:check",
+        "format": "pnpm --filter next-app format",
+        "check": "pnpm --filter next-app check",
         "core:build": "pnpm --filter core build",
         "core:lint": "pnpm --filter core lint"
     }

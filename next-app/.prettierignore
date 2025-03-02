@@ -1,7 +1,6 @@
 .next
 .vscode
 
-
 dist
 node_modules
 package.json
@@ -14,6 +13,7 @@ next.config.ts
 .prettierrc
 components.json
 tailwind.config.ts
+postcss.config.mjs
 utils.ts
 
 /components/ui

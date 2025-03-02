@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write .",
-    "prettier:check": "prettier --check .",
+    "format": "prettier --write .",
+    "check": "prettier --check .",
     "check:all": "prettier --check --config .prettierrc \"app\" \"config\"",
     "write:all": "prettier --write --config .prettierrc \"app\" \"config\"",
     "check:app": "prettier --check --config .prettierrc \"app\"",
@@ -17,19 +17,28 @@
     "write:config": "prettier --write --config .prettierrc \"config\""
   },
   "dependencies": {
-    "@types/node": "18.15.9",
-    "@types/react": "18.0.29",
-    "@types/react-dom": "18.0.11",
-    "eslint": "9.21.0",
-    "eslint-config-next": "13.2.4",
+    "@dhelarius/core": "workspace:*",
     "next": "15.2.0",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "typescript": "5.0.2",
-    "@dhelarius/core": "workspace:*"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "2.8.7"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.21.0",
+    "eslint-config-next": "^15.2.0",
+    "eslint-config-prettier": "^10.0.2",
+    "prettier": "^3.5.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": "22.x",
+    "pnpm": ">=10.5.2",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
   }
 }
